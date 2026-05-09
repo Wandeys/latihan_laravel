@@ -11,6 +11,25 @@
 
 <body>
 
+    {{-- navigasi --}}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">UNITAMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <a class="nav-link active" href="{{ route('student.index') }}">student</a>
+                    <a class="nav-link active" href="{{ route('department.index') }}">Department</a>
+                    <a class="nav-link active" href="{{ route('lecturer.index') }}">Lecturer</a>
+
+            </div>
+        </div>
+        </div>
+    </nav>
+
     {{-- page title --}}
     <div class="bg-primary py-5 text-center text-white">
         <h1 class="f-bold">{{ $title }}</h1>

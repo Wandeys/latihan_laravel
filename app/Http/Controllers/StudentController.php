@@ -15,8 +15,8 @@ class StudentController extends Controller
        
     return view('student.index', [
             'title' => 'Student',
-           // 'students'=> Student::latest()->get(),
-            'students'=> Student::orderBy('name', 'asc')->get(),
+            'students'=> Student::latest()->get(),
+           // 'students'=> Student::orderBy('name', 'asc')->get(),
             ]);
     }
 
